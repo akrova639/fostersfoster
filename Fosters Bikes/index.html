@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Front Page
+Use: This is the landing page for "Foster's Bikes" 
+Author: Foster, Marcus A. 
+School/Term: Southern Illinois University, Fall2020
+Developed: Aug 24, 2020
+Updated: Oct 11, 2020
+Tested: Oct 11, 2020; Passed on Edge. Chrome does not allow auto play, controls were added. 
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" href="slicknav.css">	
+	<link rel="stylesheet" href="Bike_Rentals.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+	    <script>
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta charset="utf-8">
+        <title>Foster's Bikes</title>
+		<meta name="description" content="a locally own bike shop dedicated to helping people">
+		<meta name="keywords" content="bike, trike, moon, speed, fast, racing, puns">
+
+</head>
+<body>
+		<audio id="audioplayer" controls autoplay loop>
+			<source src="Music.mp3">
+		</audio>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="rentals.html">Rentals</a>
+			<li class="lastitme"><a href="services.html">Services</a>
+				<ul>
+					<li><a href="sales.html">Sales Team</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+		</li>
+	</ul>
+</nav>
+	<header>
+		<h1>Foster's Bikes</h1>
+		<p>The Best Things on Two Wheels(or Three)</p>
+	</header>
+	
+	<main>
+		<h2>Our Starting Line Up</h2>
+			<ul><li><h3 class="header">Wheels Over Miami</h3></li></ul>
+			<!--<img src="Wheels_Over_Miami.jpg" alt="bike pic" class="imgH" height="200">//i kept this incase i needed it later.//-->
+		<figure>	
+			<p id="Wheels_Over_Miami"></p>
+			<figcaption>This is one of our personal favorites</figcaption>
+		</figure>
+			<p>This slick ride will take you too the moon and back</p>
+			
+			<ul><li><h3>If You Give a Mouse a Trike</h3></li></ul>
+			<img src="Trike.jpg" alt="bike pic" class="imgH" height="200">
+			<p>What it lacks in comfort it makes up for in style</p>
+			
+			<ul><li><h3>Can You Feel The Ride Tonight</h3></li></ul>
+			<img src="Couples.jpg" alt="bike pic" class="imgH" height="200">
+			<p>Perfect couples bike for a moon lite ride</p>
+			
+			<ul><li><h3>Biking in the Name of</h3></li></ul>
+			<img src="Punk_Bike.jpg" alt="bike pic" class="imgH" height="200">
+			<p>No frills rough rider for the angsty teen on the go</p>
+			
+			<ul><li><h3>I Bike It Like That</h3></li></ul>
+			<img src="Race_Bike.jpg" alt="bike pic" class="imgH" height="200">
+			<p>This Hot Racer Has a Need For Speed.</p>
+		<h3>Our Story</h3>
+			<p>Our bike shop started as a cross of passions between biking and puns but has grown 
+			into a family and community of bike lovers. We are here to service the community and 
+			grow with this city. Additionally this is being graded so I hope it goes well.</p>
+		<h3>Contact Information</h3>
+			<address>
+			Bike Master Flex<br>
+			481-515-2342<br>
+			42 Wallaby Way<br>
+			Carbondale I.L. 11235<br> 
+			USA
+			</address>
+			<p><a href="https://salukinet.siu.edu/">Required Link</a></p>
+	</main>
+</body>
+</html>

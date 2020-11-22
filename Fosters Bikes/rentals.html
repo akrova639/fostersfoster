@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Rental Information
+Use: This is the landing page for bike rentals and infromation
+Author: Foster, Marcus A. 
+School/Term: Southern Illinois University, Fall2020
+Developed: Sep 13, 2020
+Updated: Oct 11, 2020
+Tested: Oct 11, 2020; Passed on Edge and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" href="slicknav.css">	
+	<link rel="stylesheet" href="Bike_Rentals.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+	    <script>
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta charset="utf-8">
+        <title>Foster's Bikes</title>
+		<meta name="description" content="a locally own bike shop dedicated to helping people">
+		<meta name="keywords" content="bike, trike, moon, speed, fast, racing, puns">
+</head>
+<body>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="rentals.html">Rentals</a>
+			<li class="lastitme"><a href="services.html">Services</a>
+				<ul>
+					<li><a href="sales.html">Sales Team</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+				</ul>
+		</li>
+	</ul>
+</nav>
+	<header>
+		<h1>Foster's Bikes</h1>
+		<p>The Best Things on Two Wheels(or Three)</p>
+	</header>
+	<main><h2>Rentals</h2>
+		<h3>Off Road Adventure?</h3>
+		<p>Ready to get away from the city? Rent one of these two mountain bikes!</p>
+		<h4>Strong Mountain Go Bike</h4>
+			<p>This is a well round 13 speed off road bike good for beginner mountain bikers! The "double pillow" shocks will 
+			keep your knees comfortable all day.</p>
+		<h4>Double Rock Speed Demon </h4>
+			<p>This bike is not for beginners! 47 gears and gravity power speed combustor you will discover the true 
+				fastest way down the mountain</p>
+		<h4>City Slicker</h4>
+			<p>This tour-da-France style street bike will help you cause traffic anywhere in the city.</p>
+		<h4>Beach Cruiser</h4>
+			<p>This Cali style beach cruiser will have you in Birkenstock in no time. Come with free basket and horn.</p>
+	</main>
+	<aside><h2>Rates</h2>
+		<h3>15 per day</h3>
+		<h3>75 per week</h3>
+		<p>All rentals include 1 helmet, 15min instructional class, 1 x road side assitance and a free egg salad sandwich.</p>
+		<p>For rentals longer than one week please ask for additional rates.</p>
+		<p>All daily rentals must be return by 6 P.M., after hours returns can be accommodated if arranged ahead of time.</p>
+	
+	</aside>
+</body>
+</html>
