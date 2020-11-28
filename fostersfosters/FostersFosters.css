@@ -1,0 +1,137 @@
+/*<!--
+*****************************************************************************
+Title: CSS for 'Foster's Fosters'
+Use: CSS Page for Foster's Fosters
+Author: Foster, Marcus A. 
+School/Term: Southern Illinois University, Fall2020
+Developed: 26 NOV 2020
+Updated: 28NOV2020
+Tested: 28NOV2020
+******************************************************************************
+-->*/
+body {
+	background-color: Thistle;
+	width: 90%;
+	margin: auto;
+} 
+main { 
+	display: grid;
+}
+.slicknav_menu {
+	display: block;
+    width: 100%;
+    background: transparent;
+    float: left;
+	background-color: teal; 
+	color: white; 
+	font-weight: bold; 
+}  
+#nav_menu{display: none;}
+@media only screen and (max-width: 480px)
+{
+body {
+	width: 30%;
+	max-width: 460px;
+}
+}
+@media only secreen and (max-width: 768px)
+{
+body {
+	width: 50%;
+	max-width: 760px;
+}
+}
+@media only screen and (max-width: 960px)
+{
+body {
+	width: 80%;
+	max-width: 960px;
+}
+}
+figure {
+	border: 3px solid gray;
+	width: 50%;
+	padding: 75px; 
+}
+figcaption { /*figure for tables */
+	display: block;
+	font-weight: bold;
+	width: 30%; 
+}
+figure, figcaption {
+	margin: 15px;
+	padding: 10px; 
+}
+
+table {
+	border-collapse: collapse;
+	border: solid Coral;
+	margin: 10px auto;
+}
+
+
+.imgH { /* apply this to entites to round the corders and add a border*/
+	border: solid Coral;
+	border-radius: 10px;
+	position: static;
+	max-height: 100%;
+	max-width: 100%;
+	min-height: 0%;
+	min-width: 0%;
+	object-fit: cover;
+}
+.grid { /* grid used for organizing images*/ 
+	display: flex;
+	flex-wrap: flex;
+	float: left;
+}
+
+/* following containers allow for trasnition rollover*/
+.container {
+	position: relative;
+	padding: 5%;
+}
+.container .hover {
+ position: absolute;
+ top: 5%; /*This is needed to keep the picures alligned*/
+ opacity: 0;
+ max-height: 80%;/*These keep the pictures the same size for rollover.*/
+ max-width: 80%;
+ transition: .5s ease;
+ padding-top: 5%;
+}
+.container:hover .hover {
+ opacity: 1;
+}
+.container .normal {
+ transition: .5s ease;
+}
+.container:hover .normal {
+ opacity: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

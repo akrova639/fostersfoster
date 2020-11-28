@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Contact Page Foster's Fosters
+Use: This is the landing page for "Foster's Fosters " 
+Author: Foster, Marcus A. 
+School/Term: Southern Illinois University, Fall2020
+Developed: 23 NOV, 2020
+Updated: 28NOV2020
+Tested: 28NOV2020: Passed on IE and Chrome
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" href="slicknav.css">	
+	<link rel="stylesheet" href="FostersFosters.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+	    <script>
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta charset="utf-8">
+        <title>Foster's Bikes</title>
+		<meta name="description" content="A place for lovable people to find lovable dogs">
+		<meta name="keywords" content="dog, adopt, French bulldog, French bulldog, Foster, foster's fosters">
+
+</head>
+<body>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li>Contact Us
+				<ul>
+					<li><a href="Contact_Us.html">Contact Us</a></li>
+					<li><a href="Adoption_Application.html">Adoption Application</a></li>
+				</ul>
+			</li>
+			<li><a href="Meet_The_Fosters.html">Meet The Fosters</a></li>
+			<li class="lastitem"><a href="Success_Stories.html">Success Stories</a></li>
+	</ul>
+</nav>
+	<header> <h1>FAQ and Contact</h1> </header>
+<main>
+		<h3>FAQ</h3>
+			<h4>Should I be worried when adopting?</h4>
+				<p>While there is a big life change when adopting a new animal, don't let this dampen your excitement</p>
+			<h4>How common are medical conditions?</h4>
+			<p>We have found in our personal experience that most dogs have some sort of food allergy with the potential for more serous issues.</p>
+			<h4>Are French Bulldogs good with children or other dogs?</h4>
+			<p>Much like people, every dog is different. Frenchies are very affectionate and generally do well with other dogs. They can be prone to jumping so you will
+				need to keep an eye on them around small children</p>
+			<h4>Would you do it again?</h4>
+			<p>Yes! Every day!</p>
+		<h3>Additional Questions?</h3>
+		<form>
+			<h2>Please Complete All Blocks Below</h2>
+			<p>Full Name: <input type="text" id="Contact_Name" pattern="{6,25}" required></p>
+			<p>Email Address: <input type="text" id="Contact_Email" pattern="{10,25}" required></p>
+			<p>Todays Date: <input type="text" id="Contact_DATE" required pattern="[01]?\d\/[0-3]\d\/\d{4}"></p>
+			<h3>Additional Comments:</h3>
+				<textarea id="Contact_Comments" placeholder="Please include any additional comments" required></textarea><br>
+			<input type="button" id="submit" value="Submit">
+			<input type="reset" id="resetform">
+		</form>	
+			<h3>Contact Information</h3>
+				<address>
+				Foster's Foster<br>
+				815-246-8102<br>
+				42 Wallaby Way<br>
+				Rockford I.L. 61109<br> 
+				</address>			
+</main>
+</body>
+</html>

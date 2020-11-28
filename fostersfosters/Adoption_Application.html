@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+*****************************************************************************
+Title: Adoption Application form for Foster's Fosters
+Use: This is the landing page for "Foster's Fosters " 
+Author: Foster, Marcus A. 
+School/Term: Southern Illinois University, Fall2020
+Developed: 23 NOV, 2020
+Updated: 28NOV2020
+Tested: 28NOV2020: Passed on IE and Chrome
+******************************************************************************
+-->
+<html lang="en-US">
+<head>
+	<link rel="stylesheet" href="slicknav.css">	
+	<link rel="stylesheet" href="FostersFosters.css">
+	<link rel="shortcut icon" href="favicon.ico">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+	<script src="jquery.slicknav.min.js"></script>
+	    <script>
+        $(document) .ready(function(){
+            $('#nav_menu').slicknav({prependTo:"#mobile_menu"});
+        });
+        </script>
+        <meta charset="utf-8">
+        <title>Foster's Bikes</title>
+		<meta name="description" content="A place for lovable people to find lovable dogs">
+		<meta name="keywords" content="dog, adopt, French bulldog, French bulldog, Foster, foster's fosters">
+
+</head>
+<body>
+<nav id="mobile_menu"></nav>
+<nav id="nav_menu">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li>Contact Us
+				<ul>
+					<li><a href="Contact_Us.html">Contact Us</a></li>
+					<li><a href="Adoption_Application.html">Adoption Application</a></li>
+				</ul>
+			</li>
+			<li><a href="Meet_The_Fosters.html">Meet The Fosters</a></li>
+			<li class="lastitem"><a href="Success_Stories.html">Success Stories</a></li>
+	</ul>
+</nav>
+<h1>Adoption Application</h1>
+<form>
+	<h2>Please Complete All Blocks Below</h2>
+	<p>Full Name: <input type="text" id="Contact_Name" pattern="{6,25}" required></p>
+	<p>Address: <input type="text" id="Contact_Address" pattern="{15,50}" required></p>
+	<p>City: <input type="text" id="Contact_City" pattern="{4,25}" required></p>
+	State:
+	<select id="state" >
+		<option value="Illinoi">IL</option>
+		<option value="Colorado">CO</option>
+		<option value="New York">NY</option>
+		<option value="Mississippi">MI</option>
+		<option value="Florida">FL</option>
+		<option value="North Carolina">NC</option>
+	</select>
+	<p>Zip Code: <input type="text" id="Contact_ZIP" required pattern="\d{5}([\-]\d{4})"></p>
+	<p>Phone Number: <input type="text" id="Contact_Phone" required pattern="\d{3}[\-]\d{3}[\-]\d{4}"></p>
+	<p>Email Address: <input type="text" id="Contact_Email" pattern="{10,25}" required></p>
+	<p>Todays Date: <input type="text" id="Contact_DATE" required pattern="[01]?\d\/[0-3]\d\/\d{4}"></p>
+	<h2>Statements of Understanding:</h2>
+		<input type="checkbox" name="Statement_Understanding" value="Consent" required>I am adopting this animal under my own free will<br>
+		<input type="checkbox" name="Statement_Understanding" value="Housing" required>I understand I am required to pay for all medical expenses and food form the day of adoption<br>
+		<input type="checkbox" name="Statement_Understanding" value="Agreement" required>I understand that French Bulldogs can devlope heath issues and I am financially prepared to
+			handle any issues that arrise<br>
+		<input type="checkbox" name="Statement_Understanding" value="Return" required>I understand if for any unforeseen circumstances I am not longer able to care for the Dog I 
+			will NOT turn the animal into any other service than Foster's Fosters.<br>
+		<input type="checkbox" name="Statement_Understanding" value="Love" required>I am prepared and excited to love and care for this animal for the rest of it's life.<br>
+	<h3>Additional Comments:</h3>
+		<textarea id="Contact_Comments" placeholder="Please include any additional comments" required></textarea><br>
+	<input type="button" id="submit" value="Submit">
+	<input type="reset" id="resetform">
+</form>
+</body>
+</html>
